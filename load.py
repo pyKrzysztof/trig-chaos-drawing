@@ -10,6 +10,7 @@ PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), 'parameters/'))
 
 
 def load(files, current_idx):
+    print(files[current_idx])
     with open(os.path.join(PATH, files[current_idx]), 'rb') as f:
         drawing = pickle.load(f)
     return drawing

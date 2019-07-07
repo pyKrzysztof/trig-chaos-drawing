@@ -2,7 +2,7 @@
 
 Inspired by [this](http://www.artsnova.com/latoocarfian-chaotic-function-tutorial.html) article.
 
-NOTE: You will need tkinter to be installed in your environment.
+NOTE: You will need tkinter and Python 3.x and up.
 
 ### How does this work?
 We start with some small values of x,y then we use a formula to calculate new x,y values from the old ones. But that wouldn't be that interesting at all, so the idea is to plug in small and precise numbers (up to 17 decimal places) as constants to the equation. Those are only constant in one one drawing, as they are randomized in every drawing, you will most likely never encouter them again, which makes every drawing unique.
@@ -49,3 +49,5 @@ Navigate through them with arrow keys (left, right).
 
 ## Sample Drawings:
 ![sin cos sin cos 0](/images/sin-cos-sin-cos0.png)
+![tan sin sin cos 5](/images/tan-sin-sin-cos5.png)
+![tan tan sin cos 1](/images/tan-tan-sin-cos1.png)
