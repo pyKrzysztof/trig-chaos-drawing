@@ -4,9 +4,13 @@ from math import sin, asin, asinh, cos, acos, acosh, tan, atan, atanh
 import pickle
 import os
 
-WIDTH, HEIGHT = 800, 800
+
+WIDTH = 800
+HEIGHT = 800
 SCALE = 100
-functions = {'sin': sin, 'asin': asin, 'asinh': asinh, 'cos': cos, 'acos': acos, 'acosh': acosh, 'tan': tan, 'atan': atan, 'atanh': atanh}
+
+functions = {'sin': sin, 'cos': cos, 'tan': tan}
+
 
 class Drawing:
 
@@ -19,9 +23,6 @@ class Drawing:
         self.range_b = (-3, 3)
         self.range_c = (0.5, 1.5)
         self.range_d = (-0.5, 1.5)
-
-    # @classmethod
-    # def from_file(self, filename):
 
     def save_parameters(self):
         name = self.get_funcs_string()
@@ -72,8 +73,6 @@ class Drawing:
                     continue
                 elif key == 'f':
                     return 'functions'
-                elif key == 'range':
-                    return 'range'
             else:
                 if key == 'Left':
                     return 0

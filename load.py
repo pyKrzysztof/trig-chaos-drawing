@@ -4,8 +4,10 @@ import os
 import pickle
 
 
+WIDTH = 800
+HEIGHT = 800
 PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), 'parameters/'))
-WIDTH, HEIGHT = 800, 800
+
 
 def load(files, current_idx):
     with open(os.path.join(PATH, files[current_idx]), 'rb') as f:
@@ -24,22 +26,18 @@ def main():
 
     while True:
         win.delete('all')
-        count, parameters_text = draw_helpers(win, 'red')
+        count, parameters_text = draw_helpers(win, 'black')
         drawing = load(files, current_idx)
         key = drawing.draw(win, count, parameters_text, iterations=60_000, create_new_parameters=False, is_loaded=True)
         if key is None:
             continue
         elif key == 1:
             current_idx = (current_idx+1) if current_idx+1 < len(files) else current_idx
-            print(current_idx)
         elif key == 0:
             current_idx = (current_idx-1) if current_idx-1 > -1 else current_idx
-            print(current_idx)
         elif key == -1:
             break
 
 
 if __name__ == '__main__':
     main()
-
-# 2.2877480949784212, 2.741132981590643, 0.9601272373383342, 1.3241921891007848
