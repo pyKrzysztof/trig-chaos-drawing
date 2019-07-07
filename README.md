@@ -2,7 +2,9 @@
 
 Inspired by [this](http://www.artsnova.com/latoocarfian-chaotic-function-tutorial.html) article.
 
-NOTE: You will need tkinter and Python 3.x and up.
+For graphics, I used John Zelles' module released under the terms of GPL.
+
+NOTE: You will need tkinter.
 
 ### How does this work?
 We start with some small values of x,y then we use a formula to calculate new x,y values from the old ones. But that wouldn't be that interesting at all, so the idea is to plug in small and precise numbers (up to 17 decimal places) as constants to the equation. Those are only constant in one one drawing, as they are randomized in every drawing, you will most likely never encouter them again, which makes every drawing unique.
