@@ -21,7 +21,7 @@ and funcXX can be:
  * (feel free to try something else).
 
 
-There are 1944 possible combinations of functions. (4! * 3^4)
+There are 81 possible combinations of functions.
 Where each combination can drastically (or slightly) change the drawing. This means that there is <b>a lot</b> of exploring.
 
 
